@@ -1,13 +1,15 @@
 @font-face {
     font-family: Norse-Bold;
-    src: url(../fonts/Norse-Bold.otf);
+    src: url(../odin-sign-up/fonts/Norse-Bold.otf);
   }
   
-  h1 {
-    font-family: Norse-Bold, sans-serif;
+h1 {
+    font-family: Norse-Bold;
   }
 body{
-margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 .main{
     display: flex;
@@ -21,17 +23,108 @@ margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 .right{
     display: flex;
     flex-direction: column;
+    background-color: #f9f9f9;
+    width: 65vw;
 }
 .first{
-    height: 33vh;
+    height: 25vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 .second{
     height: 33vh;
+    background-color: white;
+    box-shadow: 1px 5px #e5e7eb;
+}
+.form-main-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 60%;
+    justify-content: space-between;
+}
+.form-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+input{
+    border: 1px solid #E5e7eb;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+input:focus{
+    border: 1px solid blue;
+}
+input:invalid{
+    border: 1px solid red;
+}
+#error{
+    color: red;
+    font: 10px;
+    margin: 1px;
 }
 .third{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+button{
+    background-color: #596d48;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 5px #e5e7eb;
+}
+.hyperlink{
+    margin-left: 50px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: small;
+}
+.login{
+    color: #596d48;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+.p-footer{
+    font-size: small;
+}
+.forimage{
     height: 33vh;
+    display: flex;
+    align-items: flex-end;
+}
+.forFooter{
+    height: 67vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* width: 35vh; */
+}
+.semi-transparent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: Norse-Bold;
+    font-size: 110px;
+    padding: 10px 0 10px 0;
 }
